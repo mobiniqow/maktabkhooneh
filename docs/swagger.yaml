@@ -1,0 +1,32 @@
+basePath: /api/v1
+info:
+  contact:
+    email: martin7.heinz@gmail.com
+    name: API Support
+  description: Swagger API for Golang Project Blueprint.
+  license:
+    name: MIT
+    url: https://github.com/MartinHeinz/go-project-blueprint/blob/master/LICENSE
+  termsOfService: http://swagger.io/terms/
+  title: Blueprint Swagger API
+  version: "1.0"
+paths:
+  /validation/national_code/{id}:
+    get:
+      consumes:
+      - application/json
+      description: Get Person Information by Name
+      operationId: get-city-by-id
+      parameters:
+      - description: NationalCode ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - text/html
+      responses: {}
+      summary: Get NationalCode Information by Id
+      tags:
+      - NationalCode
+swagger: "2.0"
